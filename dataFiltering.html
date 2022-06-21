@@ -3,19 +3,16 @@
     <head>
         <title> data filtering </title>
         <style>
+              /* Create three equal columns */
           * {
             box-sizing: border-box;
           }
-          
-          /* Create three equal columns that floats next to each other */
           .column {
             float: left;
             width: 33.33%;
             padding: 10px;
-            height: 1600px; /* Should be removed. Only for demonstration */
+            height: 1600px; 
           }
-          
-          /* Clear floats after the columns */
           .row:after {
             content: "";
             display: table;
@@ -312,7 +309,8 @@
                           }
 
                         ]
-                        
+    
+   /* filtering the data */    
 var firstGroup = members.filter(function(ele){
               return(ele.group) == "AliceBlue";
    
@@ -344,7 +342,8 @@ console.log(secondGroupAssistant)
 console.log(secondGroup)
 console.log(thirdGroupAssistant)
 console.log(thirdGroup)
-
+            
+/* displaying the data on web page */
 document.getElementById("firstGroupAssistantPrint").innerHTML = JSON.stringify(firstGroupAssistant ,null,2);
 document.getElementById("firstGroupPrint").innerHTML = JSON.stringify(firstGroup ,null,2);
 document.getElementById("secondGroupAssistantPrint").innerHTML = JSON.stringify(secondGroupAssistant ,null,2);
