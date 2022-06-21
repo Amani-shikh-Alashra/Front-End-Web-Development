@@ -25,10 +25,15 @@
         
     </head>
     <body>
+
+
       <h2> Hello :)</h2>
       <h4>   You can press F12 to open the console veiw. </h4>
       <h4>   Or you can see the groups here. </h4>
+
+
         <div class="row">
+
           <div class="column" style="background-color:#aaa;">
             <p> <h3> First group (AliceBlue)</h3></p>
             <p> <h4> The assistant:</h4></p>
@@ -36,6 +41,8 @@
             <p> <h4> Members:</h4></p>
             <pre id="firstGroupPrint"></pre>
           </div>
+
+
           <div class="column" style="background-color:#bbb;">
             <p> <h3> Second group (DeepPink)</h3></p>
             <p> <h4> The assistant: </h4></p>
@@ -43,6 +50,8 @@
             <p> <h4> Members:</h4></p>
             <pre id="secondGroupPrint"></pre>
           </div>
+
+
           <div class="column" style="background-color:#ccc;">
             <p> <h3> Third group (rangeRed)</h3></p>
             <p> <h4> The assistant:</h4></p>
@@ -50,6 +59,7 @@
         <p> <h4> Members:</h4></p>
         <pre id="thirdGroupPrint"></pre>
           </div>
+
         </div>
 
         <script type="text/javascript">
@@ -328,7 +338,6 @@ var thirdGroupAssistant = members.filter(function(ele){
    
 } );
 
-
 console.log(firstGroupAssistant)
 console.log(firstGroup)
 console.log(secondGroupAssistant)
@@ -342,12 +351,7 @@ document.getElementById("secondGroupAssistantPrint").innerHTML = JSON.stringify(
 document.getElementById("secondGroupPrint").innerHTML = JSON.stringify(secondGroup ,null,2);
 document.getElementById("thirdGroupAssistantPrint").innerHTML = JSON.stringify(thirdGroupAssistant ,null,2);
 document.getElementById("thirdGroupPrint").innerHTML = JSON.stringify(thirdGroup ,null,2);
- 
-
-         
+  
         </script>
-        
-
-
     </body>
 </html>
